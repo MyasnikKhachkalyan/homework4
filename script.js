@@ -19,22 +19,22 @@ const triangleStar = function (height) {
 
 triangleStar(Math.floor((0.1 + Math.random())*10)); // I add 0.1 to Math.random to not get 0 with Math.random*10, so anyway it will print at least 1 star;
 
-const multytoSingle = function(arr1,arr2){
+const multytoSingle = function(arr){
 	let newArr = [];
 	let i = 0;
-	while(i<arr1.length){
-		newArr[newArr.length] = arr1[i];
+	while(i<arr[0].length){
+		newArr[newArr.length] = arr[0][i];
 		i++;
 	} 
 	i = 0;
-	while(i<arr2.length){
-		newArr[newArr.length] = arr2[i];
+	while(i<arr[1].length){
+		newArr[newArr.length] = arr[1][i];
 		i++;
 	}
 	console.log(newArr);
 }
 
-multytoSingle([1,2,3],[4,5,6,7,8,9]);
+multytoSingle([[1,2,3],[4,5,6,7,8,9]]);
 
 const findMinMax = function (arr, boo) {
 	console.log("this is your given array [" + arr + "]");
